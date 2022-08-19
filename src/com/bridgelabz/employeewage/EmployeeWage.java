@@ -1,7 +1,12 @@
 package com.bridgelabz.employeewage;
 
-public class EmployeeWage
+public class EmployeeWage<wage_per_houre>
 {
+    static final int wage_per_houre = 20;
+    static final int full_day = 8;
+    static void dailywage(){
+        System.out.println("Employee Wage is "+ wage_per_houre*full_day);
+    }
     public static void main(String[] args)
     {
         System.out.println("Welcome To Emplyee Wage Computation Program ");
@@ -11,5 +16,6 @@ public class EmployeeWage
         }else {
         System.out.println("employee is Absent ");
         }
+        dailywage();
     }
 }
